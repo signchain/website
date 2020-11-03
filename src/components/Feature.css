@@ -42,11 +42,15 @@
 }
 
 .heading {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
   font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
   color: #f7f8fa;
+}
+
+.card__content .heading {
+  margin-top: 12px;
 }
 
 .dark {
@@ -90,6 +94,10 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+.card__content {
+  margin-top: 20px;
 }
 
 .feature-icon {
