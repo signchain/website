@@ -13,7 +13,7 @@ function HeroSection({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart,
 }) {
   return (
     <>
@@ -25,7 +25,7 @@ function HeroSection({
             className='row home__hero-row'
             style={{
               display: 'flex',
-              flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
+              flexDirection: imgStart === 'start' ? 'row-reverse' : 'row',
             }}
           >
             <div className='col'>
@@ -44,7 +44,7 @@ function HeroSection({
                   {description}
                 </p>
                 <Link to='/sign-up'>
-                  <Button buttonSize='btn--wide' buttonColor='blue'>
+                  <Button buttonSize='btn--medium' buttonColor='blue'>
                     {buttonLabel}
                   </Button>
                 </Link>

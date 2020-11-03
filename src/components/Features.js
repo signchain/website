@@ -1,6 +1,7 @@
 import React from 'react';
 import './Feature.css';
-import { MdBlurOn } from 'react-icons/md';
+
+import { FiCpu, FiShield, FiCodesandbox } from 'react-icons/fi';
 function Features() {
   return (
     <>
@@ -13,7 +14,7 @@ function Features() {
             <div className='box__1'>
               <div className='card__content'>
                 <div className='icon'>
-                  <MdBlurOn style={{ height: 'auto', width: '70px' }} />
+                  <FiCpu className='feature-icon' />
                 </div>
                 <h1 className='heading dark'>Interoperable proofs</h1>
                 <p className='home__hero-subtitle dark'>
@@ -26,7 +27,7 @@ function Features() {
             <div className='box__1'>
               <div className='card__content'>
                 <div className='icon'>
-                  <MdBlurOn style={{ height: 'auto', width: '70px' }} />
+                  <FiShield className='feature-icon' />
                 </div>
                 <h1 className='heading dark'>Privacy focused</h1>
                 <p className='home__hero-subtitle dark'>
@@ -39,7 +40,7 @@ function Features() {
             <div className='box__1'>
               <div className='card__content'>
                 <div className='icon'>
-                  <MdBlurOn style={{ height: 'auto', width: '70px' }} />
+                  <FiCodesandbox className='feature-icon' />
                 </div>
                 <h1 className='heading dark'>Workflow efficiency</h1>
                 <p className='home__hero-subtitle dark'>

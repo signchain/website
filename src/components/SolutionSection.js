@@ -8,6 +8,7 @@ function SolutionSection() {
     <>
       <div className='home__hero-section darkBg'>
         <div className='container darkBg'>
+          <h1 className='section__heading'>How it Works?</h1>
           <div
             className='row home__hero-row'
             style={{

@@ -92,6 +92,11 @@ img {
   justify-content: center;
 }
 
+.feature-icon {
+  width: 70px;
+  height: auto;
+  color: #1c2237;
+}
 @media screen and (max-width: 991px) {
   .container {
     padding-right: 30px;

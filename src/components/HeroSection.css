@@ -59,7 +59,7 @@
 
 .home__hero-subtitle {
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 24px !important;
   font-size: 18px;
   line-height: 24px;
 }
