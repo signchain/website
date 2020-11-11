@@ -31,8 +31,28 @@
   padding-bottom: 60px;
 }
 
-.top-line {
+.top-line-red {
   color: #f00946;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.top-line-green {
+  color: #339b39;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.top-line-blue {
+  color: #276afb;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

@@ -46,38 +46,38 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link
-                  to='/services'
+                <a
+                  href='https://github.com/signchain'
                   className='nav-links'
-                  onClick={closeMobileMenu}
                 >
-                  About
-                </Link>
+                  Developers
+                </a>
               </li>
               <li className='nav-item'>
-                <Link
-                  to='/products'
+                <a
+                  href='https://hackmd.io/8oj1tY8fRmih7jhtdBmKCg?view'
+                  target='_blank'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Team
-                </Link>
+                  Roadmap
+                </a>
               </li>
               <li className='nav-btn'>
                 {button ? (
-                  <Link to='/sign-up' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>SIGN UP</Button>
-                  </Link>
+                  <a href='https://app.signchain.xyz' className='btn-link'>
+                    <Button buttonStyle='btn--outline'>APP</Button>
+                  </a>
                 ) : (
-                  <Link to='/sign-up' className='btn-link'>
+                  <a href='https://app.signchain.xyz' className='btn-link'>
                     <Button
                       buttonStyle='btn--outline'
                       buttonSize='btn--mobile'
                       onClick={closeMobileMenu}
                     >
-                      SIGN UP
+                      APP
                     </Button>
-                  </Link>
+                  </a>
                 )}
               </li>
             </ul>

@@ -17,33 +17,29 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>About </Link>
-            <Link to='/'>Teams</Link>
+
+            <a href='https://consensolabs.com/#/about'>About </a>
+            <a href='https://consensolabs.com/#/team'>Team</a>
 
             <Link to='/'>Terms of Service</Link>
           </div>
           <div className='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
+            <a href='https://consensolabs.com/#/contact'>Contact</a>
             <Link to='/'>Support</Link>
-
-            <Link to='/'>Sponsorships</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Resources</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Developer Docs</Link>
+            <a href='https://youtu.be/XZy307J-0dI'>Demo Video</a>
+            <a href='https://github.com/signchain'>GitHub</a>
             <Link to='/'>Pitch Deck</Link>
           </div>
           <div className='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='/'>Discord</Link>
+            <a target="_blank" href='https://twitter.com/sign_chain'>Twitter</a>
           </div>
         </div>
       </div>
@@ -54,11 +50,13 @@ function Footer() {
               SIGNCHAIN
             </Link>
           </div>
-          <small className='website-rights'>SignChain © 2020</small>
+          <small className='website-rights'>Signchain © 2020</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
-              to='/'
+              to={
+                '//www.facebook.com/consensolabs'
+              }
               target='_blank'
               aria-label='Facebook'
             >
@@ -66,16 +64,8 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <FaInstagram />
-            </Link>
-            <Link
-              className='social-icon-link'
               to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                '//www.youtube.com/watch?v=XZy307J-0dI'
               }
               target='_blank'
               aria-label='Youtube'
@@ -84,7 +74,9 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to={
+                '//www.twitter.com/sign_chain'
+              }
               target='_blank'
               aria-label='Twitter'
             >
@@ -92,7 +84,9 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to={
+                '//www.linkedin.com/company/consensolabs'
+              }
               target='_blank'
               aria-label='LinkedIn'
             >

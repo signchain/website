@@ -1,7 +1,7 @@
 import React from 'react';
 import './SolutionSection.css';
 import Steps from './SolutionData';
-import Works from '../images/works.svg';
+import Works from '../images/how.svg';
 
 function SolutionSection() {
   return (
