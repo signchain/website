@@ -4,13 +4,17 @@ import { MdBlurOn } from 'react-icons/md';
 import {
   reactIcon,
   idx,
-  antdesign,
+  textileDB,
   semantic,
   fleek,
   filecoin,
-  buiddler,
-  scaffold,
+  Ether,
 } from '../images/index';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 function TechStack() {
   return (
     <>
@@ -20,41 +24,42 @@ function TechStack() {
             <h1 className='section__heading'>Our TechStack</h1>
           </div>
           <div className='Tech__container'>
-            <div className='box__1'>
-              <div className='card__content'>
-                <div className='icon'>
-                  <img src={reactIcon} alt='' srcset='' />
-                </div>
-
-                <p>React</p>
-              </div>
-            </div>
-            <div className='box__1'>
-              <div className='card__content'>
-                <div className='icon'>
-                  <img src={fleek} alt='' srcset='' />
-                </div>
-
-                <p>Fleek</p>
-              </div>
-            </div>
-
-            <div className='box__1'>
+            <div className='box__1' data-aos='zoom-in'>
               <div className='card__content'>
                 <div className='icon'>
                   <img src={filecoin} alt='' srcset='' />
                 </div>
 
-                <p>Textile & Filecoin</p>
+                <h3>Filecoin + Textile Hub, Powergate</h3>
               </div>
             </div>
-            <div className='box__1'>
+            <div className='box__1' data-aos='zoom-in'>
+              <div className='card__content'>
+                <div className='icon'>
+                  <img src={textileDB} alt='' srcset='' />
+                </div>
+
+                <h3>Textile ThreadDB</h3>
+              </div>
+            </div>
+
+            <div className='box__1' data-aos='zoom-in'>
               <div className='card__content'>
                 <div className='icon'>
                   <img src={idx} alt='' srcset='' />
                 </div>
 
-                <p>Ceramic IDX</p>
+                <h3>Ceramic IDX</h3>
+              </div>
+            </div>
+
+            <div className='box__1' data-aos='zoom-in'>
+              <div className='card__content'>
+                <div className='icon'>
+                  <img src={Ether} alt='' srcset='' />
+                </div>
+
+                <h3>Ethereun Platform</h3>
               </div>
             </div>
           </div>

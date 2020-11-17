@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Button } from '../../Button';
+import Logo from '../../../images/logo.png';
 import { Link } from 'react-router-dom';
 import {
   FaFacebook,
@@ -39,7 +40,9 @@ function Footer() {
           <div className='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Discord</Link>
-            <a target="_blank" href='https://twitter.com/sign_chain'>Twitter</a>
+            <a target='_blank' href='https://twitter.com/sign_chain'>
+              Twitter
+            </a>
           </div>
         </div>
       </div>
@@ -47,16 +50,14 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              SIGNCHAIN
+              <img src={Logo} alt='' />
             </Link>
           </div>
           <small className='website-rights'>Signchain © 2020</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
-              to={
-                '//www.facebook.com/consensolabs'
-              }
+              to={'//www.facebook.com/consensolabs'}
               target='_blank'
               aria-label='Facebook'
             >
@@ -64,9 +65,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to={
-                '//www.youtube.com/watch?v=XZy307J-0dI'
-              }
+              to={'//www.youtube.com/watch?v=XZy307J-0dI'}
               target='_blank'
               aria-label='Youtube'
             >
@@ -74,9 +73,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to={
-                '//www.twitter.com/sign_chain'
-              }
+              to={'//www.twitter.com/sign_chain'}
               target='_blank'
               aria-label='Twitter'
             >
@@ -84,9 +81,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to={
-                '//www.linkedin.com/company/consensolabs'
-              }
+              to={'//www.linkedin.com/company/consensolabs'}
               target='_blank'
               aria-label='LinkedIn'
             >

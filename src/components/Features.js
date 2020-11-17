@@ -2,6 +2,11 @@ import React from 'react';
 import './Feature.css';
 
 import { FiCpu, FiShield, FiCodesandbox } from 'react-icons/fi';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 function Features() {
   return (
     <>
@@ -10,7 +15,7 @@ function Features() {
           <div className='heading'>
             <h1 className='section__heading dark'>Features</h1>
           </div>
-          <div className='Feature__container'>
+          <div className='Feature__container' data-aos='zoom-in'>
             <div className='box__1'>
               <div className='card__content'>
                 <div className='icon'>
@@ -25,7 +30,7 @@ function Features() {
             </div>
 
             <div className='box__1'>
-              <div className='card__content'>
+              <div className='card__content' data-aos='zoom-in'>
                 <div className='icon'>
                   <FiShield className='feature-icon' />
                 </div>
@@ -38,7 +43,7 @@ function Features() {
             </div>
 
             <div className='box__1'>
-              <div className='card__content'>
+              <div className='card__content' data-aos='zoom-in'>
                 <div className='icon'>
                   <FiCodesandbox className='feature-icon' />
                 </div>

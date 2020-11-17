@@ -80,6 +80,7 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding-bottom: 18px;
 }
 
 @media screen and (max-width: 991px) {

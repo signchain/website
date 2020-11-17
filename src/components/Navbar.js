@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Logo from '../images/logo.png';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -34,7 +35,7 @@ function Navbar() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-              SIGNCHAIN
+              <img src={Logo} alt='Logo' srcset='' />
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -46,10 +47,7 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <a
-                  href='https://github.com/signchain'
-                  className='nav-links'
-                >
+                <a href='https://github.com/signchain' className='nav-links'>
                   Developers
                 </a>
               </li>

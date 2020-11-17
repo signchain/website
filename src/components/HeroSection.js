@@ -2,6 +2,9 @@ import React from 'react';
 import './HeroSection.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function HeroSection({
   lightBg,
@@ -17,8 +20,7 @@ function HeroSection({
   alt,
   imgStart,
 }) {
-
-  console.log(buttonLink)
+  console.log(buttonLink);
   return (
     <>
       <div
@@ -33,8 +35,8 @@ function HeroSection({
             }}
           >
             <div className='col'>
-              <div className='home__hero-text-wrapper'>
-                <div className={'top-line-'+ topLineColor}>{topLine}</div>
+              <div className='home__hero-text-wrapper' data-aos='fade-right'>
+                <div className={'top-line-' + topLineColor}>{topLine}</div>
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>
@@ -47,20 +49,19 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                { buttonLabel ?
-                <a href={buttonLink}>
-                {/* <Link to='/sign-up'> */}
-                  <Button buttonSize='btn--medium' buttonColor='blue'>
-                    {buttonLabel}
-                  </Button>
-                {/* </Link> */}
-                </a>
-                 : null
-                }
+                {buttonLabel ? (
+                  <a href={buttonLink}>
+                    {/* <Link to='/sign-up'> */}
+                    <Button buttonSize='btn--medium' buttonColor='blue'>
+                      {buttonLabel}
+                    </Button>
+                    {/* </Link> */}
+                  </a>
+                ) : null}
               </div>
             </div>
             <div className='col'>
-              <div className='home__hero-img-wrapper'>
+              <div className='home__hero-img-wrapper' data-aos='fade-left'>
                 <img src={img} alt={alt} className='home__hero-img' />
               </div>
             </div>
