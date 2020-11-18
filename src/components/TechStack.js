@@ -21,7 +21,7 @@ function TechStack() {
       <div className='home__hero-section darkBg'>
         <div className='container'>
           <div className='heading'>
-            <h1 className='section__heading'>Our TechStack</h1>
+            <h1 className='tech__heading'>Our TechStack</h1>
           </div>
           <div className='Tech__container'>
             <div className='box__1' data-aos='zoom-in'>

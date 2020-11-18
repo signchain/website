@@ -4,6 +4,7 @@ import SolutionSection from '../../SolutionSection';
 import { homeObjOne, homeObjTwo, homeObjThree } from './Data';
 import Features from '../../Features';
 import TechStach from '../../TechStack';
+import DevelopmentTimeline from '../../DevelopmentTimeline';
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
       <HeroSection {...homeObjTwo} />
       <Features />
       <SolutionSection />
-
+      <DevelopmentTimeline />
       <TechStach />
     </>
   );

@@ -72,9 +72,11 @@ img {
   justify-content: center;
 }
 
-.section__heading {
+.tech__heading {
   text-align: center;
   font-size: 26px;
+
+  padding-bottom: 18px;
 }
 .icon {
   display: flex;
