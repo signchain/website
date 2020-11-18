@@ -1,0 +1,4 @@
+.modal {
+  background-color: red !important;
+  z-index: 50;
+}
